@@ -1,1 +1,73 @@
 /*Maak hier jouw CSS!*/
+
+.container {
+    background-color: beige;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 70px auto 60px;
+    grid-template-areas:
+        "header header"
+        "content content"
+        "content subheading"
+        "content subcontent"
+        "content subcontent"
+        "content dynamisch"
+        "content footer";
+}
+
+
+.grid-item {
+    background-color: indianred;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid-header{
+    grid-area: a;
+}
+
+.grid-content{
+    grid-area: b;
+}
+
+.grid-subheading{
+    grid-area: c;
+}
+
+.grid-subcontent-a{
+    grid-area: d;
+}
+
+.grid-subcontent-b{
+    grid-area: e;
+}
+
+.grid-dynamisch{
+    grid-area: f;
+}
+
+.grid-footer{
+    grid-area: g;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 400px 800px;
+        grid-template-rows: 50px 240px 100px 50px;
+        grid-gap: 16px;
+        grid-template-areas:
+            "a c c"
+            "b c c"
+            "b e d"
+            "f f f";
+    }
+
+}
