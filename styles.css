@@ -27,36 +27,73 @@
 
 }
 
-.grid-header{
+.grid-header {
     grid-area: a;
 }
 
-.grid-content{
+.grid-content {
     grid-area: b;
 }
 
-.grid-subheading{
+.grid-subheading {
     grid-area: c;
 }
 
-.grid-subcontent-a{
+.grid-subcontent-a {
     grid-area: d;
 }
 
-.grid-subcontent-b{
+.grid-subcontent-b {
     grid-area: e;
 }
 
-.grid-dynamisch{
+.grid-dynamisch {
     grid-area: f;
 }
 
-.grid-footer{
-    grid-area: g;
+/*.grid-footer {*/
+/*    grid-area: g;*/
+/*}*/
+
+.container {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        font-size: 16px;
+    }
 }
 
 
-@media screen and (min-width: 1200px) {
+
+
+/*@media screen and (min-width: 0px) and (max-width: 576px) {*/
+/*    .container {*/
+/*        font-size: 12px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 577px) and (max-width: 768px) {*/
+/*    .container {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 769px) and (max-width: 992px) {*/
+/*    .container {*/
+/*        font-size: 16px;*/
+/*    }*/
+/*}*/
+
+
+
 
     .container {
         display: grid;
@@ -64,11 +101,18 @@
         grid-template-rows: 50px 240px 100px 50px;
         grid-gap: 16px;
         grid-template-areas:
-            "a c c"
-            "b c c"
-            "b e d"
-            ". . ."
-            "f f f";
+        "a c c"
+        "b c c"
+        "b e d"
+        ". e ."
+        "f f f"
+
+
+            /*"a c c"*/
+            /*"b c c"*/
+            /*"b e d"*/
+            /*". . ."*/
+            /*"f f f";*/
+
     }
 
-}
