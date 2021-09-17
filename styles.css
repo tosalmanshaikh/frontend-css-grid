@@ -1,6 +1,6 @@
 /*!*Maak hier jouw CSS!*!*/
 
-
+/*Mobile devices:1 column = 1fr -> 6 rows with one auto for content*/
 .container {
     background-color: beige;
     display: grid;
@@ -51,23 +51,15 @@
     grid-area: f;
 }
 
-/*.grid-footer {*/
-/*    grid-area: g;*/
-/*}*/
-
-
-
-
-
-
+/**layout for desktop*/
 @media screen and (min-width: 768px) {
-
 
     .container {
         font-size: 12px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px auto 100px auto 50px;
+        /*grid-template-rows: 50px auto 240px 100px 50px;*/
         grid-gap: 16px;
         grid-template-areas:
         "a c c"
@@ -76,12 +68,10 @@
         "b e ."
         "f f f"
 
-}
-
-
     }
 
 
+}
 
 
 
@@ -108,15 +98,4 @@
 
 
 
-
-
-    /*"a c c"*/
-    /*"b c c"*/
-    /*"b e d"*/
-    /*". . ."*/
-    /*"f f f";*/
-
-
-
-/*test*/
 
